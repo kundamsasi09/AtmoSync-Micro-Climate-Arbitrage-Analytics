@@ -1,0 +1,30 @@
+﻿{
+  "trader@infotact.in": {
+    "name": "Sasi Rekha Kundam",
+    "email": "trader@infotact.in",
+    "role": "Commodities Trader",
+    "organization": "Infotact Global Commodities Desk",
+    "password_hash": "66a509d0c8f3e005466b9ee2b8d3a7bf9c3e6d53d4b1c1cbaf05b0bcbc066205"
+  },
+  "sasi@atmosync.org": {
+    "name": "Dr. Sasi Rekha Kundam",
+    "email": "sasi@atmosync.org",
+    "role": "Agronomist",
+    "organization": "Andhra Agricultural Research Consortium",
+    "password_hash": "b4f96321ab056e04f5acd98532b5f9c6375f9c3448411a5b706e4c9378b0c7f4"
+  },
+  "anita@atmosync.org": {
+    "name": "Anita Rao",
+    "email": "anita@atmosync.org",
+    "role": "Supply Chain Analyst",
+    "organization": "AgriLogistics India Network",
+    "password_hash": "b13a32fd08eb4736f6f42f3631ccf47f55f913b9a4ef4b4b1055f9706047fc7d"
+  },
+  "mentor_eval@infotact.in": {
+    "name": "Infotact Mentor",
+    "email": "mentor_eval@infotact.in",
+    "role": "Farm Manager",
+    "organization": "Infotact Academic Evaluation",
+    "password_hash": "b591e6e85e40c37be08d0e90ba6362facb6f266fa1afcda75a418e0ae40dbfe0"
+  }
+}
