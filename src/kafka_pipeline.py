@@ -1,3 +1,4 @@
+﻿# Mid-Project Review: Validated streaming ingestion pipeline with zero consumer lag
 """
 AtmoSync: Micro-Climate Arbitrage Analytics
 Module: kafka_pipeline.py
