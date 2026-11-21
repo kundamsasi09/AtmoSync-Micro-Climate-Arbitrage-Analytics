@@ -1,4 +1,5 @@
-﻿"""AtmoSync: Micro-Climate Arbitrage Analytics (Agriculture focus).
+﻿# Week 3 Milestone: Spoilage Arbitrage real-time UI, reefer fleet reroute optimizer
+"""AtmoSync: Micro-Climate Arbitrage Analytics (Agriculture focus).
 Run: streamlit run app.py
 Data: Kaggle 'Global Weather Repository' CSV (upload in sidebar or put in data/raw/)."""
 import os
