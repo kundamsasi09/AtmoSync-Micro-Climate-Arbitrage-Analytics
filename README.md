@@ -14,6 +14,8 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red.svg)](https://streamlit.io/)
 [![Snowflake](https://img.shields.io/badge/Snowflake-Cloud%20DWH-29B5E8.svg)](https://www.snowflake.com/)
 [![Apache Kafka](https://img.shields.io/badge/Kafka-Streaming%20Ingestion-black.svg)](https://kafka.apache.org/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://www.docker.com/)
+[![CI Pipeline](https://github.com/kundamsasi09/AtmoSync-Micro-Climate-Arbitrage-Analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/kundamsasi09/AtmoSync-Micro-Climate-Arbitrage-Analytics/actions)
 [![Unit Tests](https://img.shields.io/badge/Unit%20Tests-100%25%20Passing-brightgreen.svg)]()
 
 ---
@@ -103,6 +105,7 @@ According to the **Infotact Solutions** 4-week development plan, daily commits a
 | **Day 17** | Nov 21, 2026 | Week 3: Arbitrage UI | Core Spoilage Arbitrage UI with At-Risk container ranking & reroute recommendations (`app.py`) | `feat(ui): reroute dashboard` | ✅ Verified |
 | **Day 18** | Nov 22, 2026 | Week 4: Automation | Clustered materialized view optimization for sub-second query latency (`fct_spoilage_arbitrage_materialized.sql`) | `perf(warehouse): materialized views` | ✅ Verified |
 | **Day 19** | Nov 23, 2026 | Week 4: Polish & Refine | Automated Slack & Email webhook alerts dispatcher and final executive desk (`src/alerts.py`) | `feat(alerts): webhook alerts` | ✅ Verified |
+| **Day 20** | Nov 23, 2026 | Week 4: CI/CD & Docker | Production Dockerfile, multi-service Docker Compose (Kafka + Zookeeper + App), and GitHub Actions CI workflow | `feat(ci-docker): CI workflow & Docker stack` | ✅ Verified |
 
 ---
 
@@ -193,7 +196,12 @@ python tests/test_alerts.py
 python src/kafka_pipeline.py
 ```
 
-### 4. Launch Dashboard
+### 4. Launch Dashboard (Local Python)
 ```powershell
 streamlit run app.py
+```
+
+### 5. Launch Full Stack with Docker Compose (Kafka + Zookeeper + Dashboard)
+```powershell
+docker-compose up --build
 ```
