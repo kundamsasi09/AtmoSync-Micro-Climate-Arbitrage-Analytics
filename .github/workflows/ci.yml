@@ -42,3 +42,4 @@ jobs:
         python tests/test_kafka_pipeline.py
         python tests/test_economics.py
         python tests/test_alerts.py
+        python tests/test_benchmark.py

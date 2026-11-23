@@ -106,6 +106,7 @@ According to the **Infotact Solutions** 4-week development plan, daily commits a
 | **Day 18** | Nov 22, 2026 | Week 4: Automation | Clustered materialized view optimization for sub-second query latency (`fct_spoilage_arbitrage_materialized.sql`) | `perf(warehouse): materialized views` | ✅ Verified |
 | **Day 19** | Nov 23, 2026 | Week 4: Polish & Refine | Automated Slack & Email webhook alerts dispatcher and final executive desk (`src/alerts.py`) | `feat(alerts): webhook alerts` | ✅ Verified |
 | **Day 20** | Nov 23, 2026 | Week 4: CI/CD & Docker | Production Dockerfile, multi-service Docker Compose (Kafka + Zookeeper + App), and GitHub Actions CI workflow | `feat(ci-docker): CI workflow & Docker stack` | ✅ Verified |
+| **Day 21** | Nov 23, 2026 | Week 4: Pipeline Benchmark | End-to-end streaming throughput benchmark, Arrhenius decay stress testing & validation (`src/benchmark.py`) | `feat(benchmark): streaming pipeline benchmark & tests` | ✅ Verified |
 
 ---
 
@@ -181,7 +182,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 2. Run All 6 Unit Test Suites
+### 2. Run All 7 Unit Test Suites
 ```powershell
 python tests/test_arbitrage.py
 python tests/test_auth.py
@@ -189,11 +190,13 @@ python tests/test_spoilage_arbitrage.py
 python tests/test_kafka_pipeline.py
 python tests/test_economics.py
 python tests/test_alerts.py
+python tests/test_benchmark.py
 ```
 
-### 3. Run Mid-Project Review Kafka Benchmark
+### 3. Run Mid-Project Review & Streaming Ingestion Benchmark
 ```powershell
 python src/kafka_pipeline.py
+python src/benchmark.py
 ```
 
 ### 4. Launch Dashboard (Local Python)
